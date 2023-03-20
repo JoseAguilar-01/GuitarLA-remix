@@ -1,0 +1,10 @@
+.we .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.we img {
+  width: 60%;
+  margin: 0 auto;
+}

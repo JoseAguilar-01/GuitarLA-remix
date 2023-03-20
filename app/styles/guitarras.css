@@ -1,0 +1,88 @@
+.guitars-grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .guitars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .guitars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.guitar {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.guitar .content {
+  padding: 1rem;
+}
+
+.guitar .content h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0;
+}
+
+.guitar .price {
+  color: var(--primary);
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 900;
+}
+
+.guitar .description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.form select {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid var(--black);
+  border-radius: 0.4rem;
+}
+
+.form input[type='submit'] {
+  margin-top: 3rem;
+  background-color: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 140ms;
+}
+
+.form input[type='submit']:hover {
+  background-color: var(--primary);
+}

@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build",
+    "typecheck": "tsc",
+    "prettier": "prettier --write .",
+    "lint": "npx eslint ."
+  },
+  "dependencies": {
+    "@remix-run/node": "^1.14.3",
+    "@remix-run/react": "^1.14.3",
+    "@remix-run/serve": "^1.14.3",
+    "classnames": "^2.3.2",
+    "isbot": "^3.6.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remix-utils": "^6.0.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.14.3",
+    "@remix-run/eslint-config": "^1.14.3",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
